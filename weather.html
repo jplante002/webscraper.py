@@ -24,24 +24,26 @@
 	          x = x + 1;
 	        }
 	        else{
-	          array[x] += allText[i];
+	          array[x] = allText[i];
 	        }
 	        i = i + 1;      
 	      }
 	      alert(array[1]);
-      }
-      
-      var temp = array[0];
+	           var temp = array[0];
       var weather = array[1];
       var high = array[2];
       var low = array[3];
       var dow = array[4];
       
-      document.getElementById('temp').innerHTML = "Temprature: " + temp;
+	            document.getElementById('temp').innerHTML = "Temprature: " + temp;
       document.getElementById('weather').innerHTML = "Weather: " + weather;
       document.getElementById('tempHigh').innerHTML = "Today's High: " + high;
       document.getElementById('tempLow').innerHTML = "Today's Low: " + low;
       document.getElementById('dow').innerHTML = "Today is: " + dow;
+
+      }
+      
+ 
       
       rawFile.send(null);
     }
