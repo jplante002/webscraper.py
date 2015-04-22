@@ -30,7 +30,7 @@
 	      i = i + 1;      
 	    }
 	    alert("Test: ", array[1]); //Test alert
-	    var temp = array[0];
+	    var temp = " " + array[0];
         var weather = array[1];
         var high = array[2];
         var low = array[3];
